@@ -34,47 +34,47 @@
             </li>
         </ul>
     </nav>
-    <main>
-        <form method="post">
-            <label class="">
+    <main class="container mx-auto form bg-light shadow-sm">
+        <form method="post" class="row text-center">
+            <label class="col-12-xm disblock h4 mb-4">
                 Informações do cliente
             </label>
-            <label for="nomeCliente">
+            <label class="col-12-xm disblock" for="nomeCliente">
                 Seu nome
             </label>
-            <input type="text" name="nomeCliente" placeholder="Exemplo dos Santos" required>
-            <label for="email">
+            <input class="shadow-sm col-12-xm io-input border-0 border-bottom p-2" type="text" name="nomeCliente" placeholder="Exemplo dos Santos" required>
+            <label class="col-12-xm disblock mt-4" for="email">
                 E-mail
             </label>
-            <input type="email" name="email" placeholder="exemplo@mail.com" required>
+            <input class="shadow-sm col-12-xm io-input border-0 border-bottom p-2 mb-5" type="email" name="email" placeholder="exemplo@mail.com" required>
             <hr>
-            <label class="">
+            <label class="col-12-xm disblock h4 mb-4">
                 Endereço
             </label>
-            <label for="cep">
+            <label class="col-12-xm disblock" for="cep">
                 CEP
             </label>
-            <input type="text" name="cep" placeholder="4X-XXX-XXX" maxlength="10" required>
-            <label for="address">
+            <input class="shadow-sm col-12-xm io-input border-0 border-bottom p-2 text-center" type="text" name="cep" placeholder="4X-XXX-XXX" maxlength="10" required>
+            <label class="col-9-xm disblock mt-4" for="address">
                 Endereço/Logradouro
             </label>
-            <input type="text" name="address" placeholder="Rua, Alameda, Caminho etc" required>
-            <label for="numaddress">
+            <input class="shadow-sm col-9-xm io-input border-0 border-bottom p-2" type="text" name="address" placeholder="Rua, Alameda, Caminho etc" required>
+            <label class="col-3-xm disblock mt-4" for="numaddress">
                 nº
             </label>
-            <input type="number" name="numaddress" placeholder="19, 1000, 71..." min="1" required>
-            <label for="comp">
+            <input class="shadow-sm col-3-xm io-input border-0 border-bottom p-2" type="number" name="numaddress" placeholder="19, 1000, 71..." min="1" required>
+            <label class="col-12-xm disblock mt-4" for="comp">
                 Complemento
             </label>
-            <textarea class="comp" name="comp" placeholder="Informações de possível importância..."></textarea>
-            <label for="cidade">
+            <textarea class="shadow-sm comp col-12-xm io-input border-0 border-bottom p-2" name="comp" placeholder="Informações de possível importância..."></textarea>
+            <label class="col-12-xm disblock mt-4" for="cidade">
                 Cidade
             </label>
-            <input type="text" name="cidade" placeholder="São Paulo, Rio de Janeiro, Salvador..." required>
-            <label for="estado">
+            <input class="shadow-sm col-9-xm io-input border-0 border-bottom p-2" type="text" name="cidade" placeholder="São Paulo, Rio de Janeiro, Salvador..." required>
+            <label class="col-8-xm disblock mt-4" for="estado">
                 Estado
             </label>
-            <select id="state" name="estado" required>
+            <select class="shadow-sm col-4-xm io-input border-0 border-bottom p-2" name="estado" required>
                 <option selected disabled>Selecione UF</option>
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>
@@ -104,32 +104,38 @@
                 <option value="SE">SE</option>
                 <option value="TO">TO</option>
             </select>
-            <hr>
-            <label class="title-form">Pedidos</label>
-            <label for="orders">
+            <hr class="mt-4">
+            <label class="col-12-xm disblock h4 mb-4">Pedidos</label>
+            <label class="col-12-xm disblock" for="orders">
                 Seleção de produtos
             </label>
-            <select id="orders" name="orders" size="12" multiple="true" required>
-                <optgroup label="Doces">
-                    <option class="doce-opt" value="marshmallow">
+            <select class="col-12-xm shadow-sm border-0 border-start border-bottom" name="orders" size="14" multiple="true" required>
+                <optgroup label="Doces" class="text-primary bg-gray-400">
+                    <option value="marshmallow">
                         Marshmallows
                     </option>
-                    <option class="doce-opt" value="bolo">
-                        Bolo
+                    <option value="chocobolo">
+                        Bolo de chocolate
                     </option>
-                    <option class="doce-opt" value="cupcake">
+                    <option value="bolo">
+                        Bolo recheado
+                    </option>
+                    <option value="cupcake">
                         Cupcakes
                     </option>
-                    <option class="doce-opt" value="donut">
+                    <option value="donut">
                         Donuts
                     </option>
                     <abbr title="Brigadeiros, beijinhos, cajuzinhos etc">
-                        <option id="party" class="doce-opt" value="brigadeiro">
+                        <option id="party" value="brigadeiro">
                             Doces de festa
                         </option>
                     </abbr>
                 </optgroup>
-                <optgroup label="Salgados">
+                <optgroup label="Salgados" class="mark bg-gray-400">
+                    <option class="salgado-opt" value="croissant">
+                        Croissant
+                    </option>
                     <option class="salgado-opt" value="pizza">
                         Minipizzas
                     </option>
@@ -149,11 +155,11 @@
                     </abbr>         
                 </optgroup>
             </select>
-            <label for="comp-order">
+            <label for="comp-order" class="col-12-xm mt-4">
                 Complemento de pedidos
             </label>
-            <textarea name="comp-order" class="" placeholder="Sabores, alergias, excessões, preferências etc..."></textarea>
-            <input type="submit" value="Send">
+            <textarea name="comp-order" class="shadow-sm col-12-xm io-input border-0 border-bottom p-2 comp" placeholder="Sabores, alergias, excessões, preferências etc..."></textarea>
+            <input class="shadow container btn btn-outline-danger btn-block" type="submit" value="Send">
         </form>
     </main>
     <footer class="container-fluid text-center pt-5 pb-4 bg-danger text-white">
