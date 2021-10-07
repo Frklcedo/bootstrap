@@ -34,6 +34,128 @@
             </li>
         </ul>
     </nav>
+    <main>
+        <form method="post">
+            <label class="">
+                Informações do cliente
+            </label>
+            <label for="nomeCliente">
+                Seu nome
+            </label>
+            <input type="text" name="nomeCliente" placeholder="Exemplo dos Santos" required>
+            <label for="email">
+                E-mail
+            </label>
+            <input type="email" name="email" placeholder="exemplo@mail.com" required>
+            <hr>
+            <label class="">
+                Endereço
+            </label>
+            <label for="cep">
+                CEP
+            </label>
+            <input type="text" name="cep" placeholder="4X-XXX-XXX" maxlength="10" required>
+            <label for="address">
+                Endereço/Logradouro
+            </label>
+            <input type="text" name="address" placeholder="Rua, Alameda, Caminho etc" required>
+            <label for="numaddress">
+                nº
+            </label>
+            <input type="number" name="numaddress" placeholder="19, 1000, 71..." min="1" required>
+            <label for="comp">
+                Complemento
+            </label>
+            <textarea class="comp" name="comp" placeholder="Informações de possível importância..."></textarea>
+            <label for="cidade">
+                Cidade
+            </label>
+            <input type="text" name="cidade" placeholder="São Paulo, Rio de Janeiro, Salvador..." required>
+            <label for="estado">
+                Estado
+            </label>
+            <select id="state" name="estado" required>
+                <option selected disabled>Selecione UF</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MG">MG</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="PR">PR</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="RS">RS</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+            <hr>
+            <label class="title-form">Pedidos</label>
+            <label for="orders">
+                Seleção de produtos
+            </label>
+            <select id="orders" name="orders" size="12" multiple="true" required>
+                <optgroup label="Doces">
+                    <option class="doce-opt" value="marshmallow">
+                        Marshmallows
+                    </option>
+                    <option class="doce-opt" value="bolo">
+                        Bolo
+                    </option>
+                    <option class="doce-opt" value="cupcake">
+                        Cupcakes
+                    </option>
+                    <option class="doce-opt" value="donut">
+                        Donuts
+                    </option>
+                    <abbr title="Brigadeiros, beijinhos, cajuzinhos etc">
+                        <option id="party" class="doce-opt" value="brigadeiro">
+                            Doces de festa
+                        </option>
+                    </abbr>
+                </optgroup>
+                <optgroup label="Salgados">
+                    <option class="salgado-opt" value="pizza">
+                        Minipizzas
+                    </option>
+                    <option class="salgado-opt" value="coxinha">
+                        Coxinha
+                    </option>
+                    <option class="salgado-opt" value="boliv">
+                        Bolivianas
+                    </option>
+                    <option class="salgado-opt" value="pastel">
+                        Pastéis
+                    </option>
+                    <abbr title="Batatas fritas, anéis de cebola etc">
+                        <option id="fried" class="salgado-opt" value="fried">
+                        Frituras de acompanhamento
+                        </option>       
+                    </abbr>         
+                </optgroup>
+            </select>
+            <label for="comp-order">
+                Complemento de pedidos
+            </label>
+            <textarea name="comp-order" class="" placeholder="Sabores, alergias, excessões, preferências etc..."></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </main>
     <footer class="container-fluid text-center pt-5 pb-4 bg-danger text-white mt-5">
         <p>
             Projeto feito por <a href="https://github.com/AllanOliveira22" rel="external" target="_blank" class="text-decoration-none text-danger badge bg-white">Allan Moreira</a>, <a href="https://github.com/Frklcedo" rel="external" target="_blank" class="text-decoration-none text-danger badge bg-white">Franklin Macedo</a>, <a href="https://github.com/GabrielSalazar29" rel="external" target="_blank" class="text-decoration-none text-danger badge bg-white">Gabriel Salazar</a>, <a href="https://github.com/gsjosias" rel="external" target="_blank" class="text-decoration-none text-danger badge bg-white">Josias Gonçalves</a> e <a href="https://github.com/MarciusNovais" rel="external" target="_blank" class="text-decoration-none text-danger badge bg-white text-nowrap">Marcius Vinicius</a>.
