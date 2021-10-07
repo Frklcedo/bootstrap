@@ -1,0 +1,8 @@
+@media (max-width:575px){
+    .mininav{
+        justify-content: stretch;
+    }
+    .mininav-1{
+        flex: 1 1;
+    }
+}
