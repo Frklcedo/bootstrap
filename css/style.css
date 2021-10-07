@@ -3,6 +3,9 @@
     max-width: 900px;
     padding: 40px 15% 60px;
 }
+.tb-pd{
+    padding: 40px 30px 60px;
+}
 .disblock{
     display: block;
 }
@@ -32,5 +35,15 @@ input[type=number] {
     }
     .form{
         padding: 20px;
+    }
+}
+@media (min-width:576px){
+    .tb-pd{
+        padding: 40px 5% 60px;
+    }
+}
+@media (min-width:992px){
+    .tb-pd{
+        padding: 40px 15% 60px;
     }
 }
